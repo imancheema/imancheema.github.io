@@ -1,11 +1,22 @@
 :root {
-    --bg-color: #F4CBA4;
-    --secondary-color: #E49D67;
+    --bg-color: #23272A;
+}
+
+h1 {
+    font-size: 170%;
+    padding-top: 2em;
+}
+
+h2 {
+    font-size: 250%;
+    padding-top: 0.01%;
+    line-height: 0.2;
 }
 
 body {
     background-color: var(--bg-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: var(--font-color);
     max-width: 72ch;
     margin: auto;
 }
