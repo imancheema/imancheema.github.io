@@ -1,5 +1,9 @@
 :root {
     --bg-color: #23272A;
+    --font-color: #BDBDBD;
+    --third-color: #BB86FC;
+    --fourth-color: #03DACF;
+    --fifth-color: #FF7597;
 }
 
 h1 {
@@ -11,14 +15,41 @@ h2 {
     font-size: 250%;
     padding-top: 0.01%;
     line-height: 0.2;
+    color:#FF7597;
 }
 
 body {
     background-color: var(--bg-color);
     font-family: 'Poppins', sans-serif;
     color: var(--font-color);
-    max-width: 72ch;
+    max-width: 72ch;  /*120ch*/
     margin: auto;
+
+    
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    background-color: #595959;
+    color: #ffffff;
+    list-style: none;
+    text-align: center;
+    padding: 20px 0 20px 0; 
+}
+
+.nav > li {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav > li > a:hover {
+    color: #c1c1c1;
 }
 
 .skills {
