@@ -1,88 +1,50 @@
 :root {
-    --banner-color: #FCD5CE;
+    --banner-color: #ffffff;
     --font-color: #121212;
     --secondary-color: #DE765B;
     --tertiary-color: #457B9D;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: var(--font-color);
-    margin: auto;  
+    font-family: 'Inconsolata', monospace;
 }
 
-#banner {
-    background-color: var(--banner-color);
-    color: var(--font-color);
-    padding: 5em;
-    padding-left: 15em;
-    padding-right: 20em;
-    
+h1, h2, h3 {
+    font-family: 'Work Sans', sans-serif;
 }
 
-.email{
-    text-decoration: none;
-    border: 2px solid var(--secondary-color);
-    width: 1000px;
-    letter-spacing: 0.5px;
-    border-radius: 8px;
-    padding: 0;
-    padding: 0.5em;
-    margin: 0.75em;
-    color: var(--font);
+h1 {
+    font-size: 3em;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.banner-channels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.email:hover {
-    text-decoration: none;
-    background-color: #F6C8BB;
+.banner {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10em;
+    padding-top: 10em;
 }
 
 .headshot {
     width: 300px;
-    clip-path: circle();
-    right: 100px;
+    height: 300px;
 }
 
-h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4em;
+.about-me {
+    padding-left: 5em;
+    /* white-space: pre-wrap; */
+    word-wrap: break-word;
+    overflow: hidden;
+    max-width: 24rem;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
 }
-
-h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 1.5em;
-    color:#8D7F81;
-}
-
-h3 {
-
-    color: var(--tertiary-color);
-
-}
-
-.skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.skills > h3 {
-    margin: 0;
-    padding: 0;
-}
-
-.skills > div > ul{
-    list-style-type: none;
-}
-.skills-li{
-    background-color: var(--secondary-color);
-    border-radius: 1000px;
-    padding: 0.2em;
-    margin: 0.25em;
-    text-align: center;
-}
-
