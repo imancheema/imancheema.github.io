@@ -1,8 +1,9 @@
 :root {
   --primary-color:  #FF69B4;
-  --secondary-color: #86b906;
+  --secondary-color: #e65d7b;
   --links-color: #09A4DB;
-  --secondary-background-color: #f5f5f5;
+  --secondary-background-color: #dfebf1;
+  /*--secondary-background-color: #d9e5ea;*/
   --scroll-bar-bg-color: #ebebeb;
   --hover-color: #565656;
   --selection-color: #ffe3eb;
@@ -114,17 +115,20 @@ a:hover {
   margin-right: 10rem;
 } */
 
-.banner-channels {
+/* .banner-channels {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
+}  */
 
 .banner {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .headshot {
@@ -148,7 +152,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   padding-bottom: 5em;
-  padding-top: 3em;
+  
 }
 
 .extracurricular {
@@ -234,23 +238,24 @@ a:hover {
     background: var(--primary-color);
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 800px) {
+  
   .banner {
       flex-direction: column;
       align-items: center;
+      height: auto;
   }
   
   .about-me {
       padding: 1em;
-      padding-bottom: 50em;
+      padding-top: none;
   }
   .headshot {
-      width: 100%;
-      max-width: 380px;
-      height: auto;
-      /* height: auto; */
-      padding-top: 30em;
+   height: 20em;
+   width: 20em;
+   border: 20px solid white;
+      /* width: 100%;
+      height: auto; */
   }
   .social {
     padding-left: 0.75em;
