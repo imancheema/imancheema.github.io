@@ -1,8 +1,10 @@
 :root {
-  --primary-color:  #FF69B4;
-  --secondary-color: #e65d7b;
+  --primary-color:  #225a62;
+  /* --primary-color:  #FF69B4; */
+  --secondary-color: #69b9d0;
+  /* --secondary-color: #ff5177; */
   --links-color: #09A4DB;
-  --secondary-background-color: #dfebf1;
+  /* --secondary-background-color: #dfebf1; */
   /*--secondary-background-color: #d9e5ea;*/
   --scroll-bar-bg-color: #ebebeb;
   --hover-color: #565656;
@@ -53,13 +55,14 @@ h2.tagline {
 
 h3 {
   font-size: 1.3em;
+  margin-bottom: 0.5em;
 }
 
 h4 {
   padding-top: 0em;
   margin-top: 0em;
   color: var(--secondary-color);
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-bottom: 0em;
 }
 
@@ -75,6 +78,13 @@ a {
       
 a:hover {
       font-weight: bold;
+}
+
+hr.solid {
+  border: 0.75px solid rgba(123, 123, 123, 0.1);
+  width: 100%;
+  background: rgb(216, 215, 215);
+  height: 1px;
 }
 
   /* navbar */
@@ -139,12 +149,17 @@ a:hover {
 }
 
 .about-me {
-  padding-left: 5em;
+  padding-left: 3.2em;
   word-wrap: break-word;
   overflow: hidden;
   max-width: 32rem;
   border-left: none;
   border-right: 0.5em solid transparent;
+}
+
+.professional-experience {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .experience-background {
@@ -155,12 +170,67 @@ a:hover {
   
 }
 
+.skills {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.experience-skills-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 0;
+}
+
+.experience-skills-list > li {
+  background-color: rgba(235, 231, 231, 0.837);
+  border-radius: 30px;
+  margin-right: 1.5em;
+  padding: 0.6em;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.skills-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.skills-list > li {
+  background-color: rgba(235, 231, 231, 0.837);
+  border-radius: 30px;
+  margin-right: 1.5em;
+  padding: 0.6em;
+  font-weight: bold;
+}
+
+.skill1 {
+  color: rgb(12, 220, 165);
+}
+.skill2 {
+  color: rgb(255, 115, 0);
+}
+.skill3 {
+  color: rgb(252, 4, 91);
+}
+.skill4 {
+  color: rgb(95, 0, 136);
+}
 .extracurricular {
-  margin-top: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
 }
 
 .community-projects {
-  margin-top: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 /* 
@@ -238,6 +308,12 @@ a:hover {
     background: var(--primary-color);
 }
 
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(217, 239, 248);
+  color: black;
+}
 @media screen and (max-width: 800px) {
   
   .banner {
