@@ -1,9 +1,10 @@
 :root {
-  --primary-color:  #225a62;
+  --primary-color:  #194569;
   /* --primary-color:  #FF69B4; */
-  --secondary-color: #69b9d0;
+  /* --secondary-color: #c392e6; */
+  --secondary-color: #87d0e1;
   /* --secondary-color: #ff5177; */
-  --links-color: #09A4DB;
+  --links-color: #5f84a2;
   /* --secondary-background-color: #dfebf1; */
   /*--secondary-background-color: #d9e5ea;*/
   --scroll-bar-bg-color: #ebebeb;
@@ -89,6 +90,8 @@ hr.solid {
 
   /* navbar */
 
+
+ 
 /* .header {
   background-color: black;
   height: 3em;
@@ -113,7 +116,7 @@ hr.solid {
   color: var(--secondary-background-color);
   font-weight: 100;
   padding: 10px;
-} */
+} 
 
 /* section {
   padding-top: 2em;
