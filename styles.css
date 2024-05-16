@@ -1,17 +1,10 @@
 :root {
   --background-color: #ffffff;
   --primary-color: #e63946;
-  /* --primary-color:  #FF69B4; */
-  /* --secondary-color: #c392e6; */
   --secondary-color: #ee7c99;
-  /* --secondary-color: #ff5177; */
-  /* --links-color: #005d97; */
   --links-color: #ff0033;
-
-  /* --secondary-background-color: #dfebf1; */
-  /*--secondary-background-color: #d9e5ea;*/
   --scroll-bar-bg-color: #ebebeb;
-  --hover-color: #565656;
+  --hover-color: #55a5ff;
   --selection-color: #ffe3eb;
 }
 
@@ -164,17 +157,17 @@ hr.solid {
 .professional-experience {
   display: flex;
   justify-content: center;
-  margin-top: 50px; /* Adjust the margin as needed */
+  margin-top: 50px;
   padding-bottom: 2em;
 }
 
 .experience-skills-list li {
   display: inline-block;
-  margin-right: 10px; /* Add space between skills */
-  background-color: #f2f2f2; /* Light background color for skills */
-  padding: 6px 12px; /* Add padding to skills */
-  border-radius: 20px; /* Round the skill boxes */
-  font-size: 14px; /* Adjust font size */
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
 }
 
 .timeline {
@@ -198,17 +191,17 @@ hr.solid {
 }
 
 .timeline-content {
-  background-color: #efefef; /* Lighter background color */
+  background-color: #efefef;
   padding: 20px;
-  border-radius: 8px; /* Slightly rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 30em;
 }
 
 .timeline-title {
-  font-size: 22px; /* Slightly larger font size */
+  font-size: 22px;
   margin-top: 0;
-  margin-bottom: 10px; /* Add some space below title */
+  margin-bottom: 10px;
 }
 
 .timeline-date {
@@ -219,13 +212,13 @@ hr.solid {
 
 .experience-skills-list {
   padding: 0;
-  margin: 10px 0 0; /* Add margin to separate skills */
+  margin: 10px 0 0;
   list-style-type: none;
 }
 
 .timeline-end {
   position: absolute;
-  top: calc(100%); /* Position below the last timeline item */
+  top: calc(100%);
   left: 50%;
   transform: translateX(-50%);
   width: 10px;
@@ -276,18 +269,15 @@ hr.solid {
 
 .skill1 {
   color: #8c73e0;
-  /* color: rgb(12, 220, 165); */
 }
 .skill2 {
   color: #00c94dcc;
-  /* color: rgb(255, 115, 0); */
 }
 .skill3 {
   color: rgb(252, 4, 91);
 }
 .skill4 {
   color: #7dbeff;
-  /* color: rgb(95, 0, 136); */
 }
 .extracurricular {
   padding-top: 2em;
@@ -378,7 +368,6 @@ footer {
   text-align: center;
   padding: 2px;
   background-color: var(--secondary-color);
-  /* background-color: #fc727db8; */
   color: white;
 }
 @media screen and (max-width: 800px) {
@@ -392,13 +381,18 @@ footer {
     padding: 1em;
     padding-top: none;
   }
+
   .headshot {
     height: 22em;
     width: 20em;
     border: 20px solid var(--background-color);
-    /* width: 100%;
-      height: auto; */
   }
+
+  .timeline-content {
+    width: 100%;
+    max-width: 20em;
+  }
+
   .social {
     padding-left: 0.75em;
   }
