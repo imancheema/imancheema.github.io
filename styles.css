@@ -1,10 +1,13 @@
 :root {
-  --primary-color:  #194569;
+  --background-color: #ffffff;
+  --primary-color: #e63946;
   /* --primary-color:  #FF69B4; */
   /* --secondary-color: #c392e6; */
-  --secondary-color: #87d0e1;
+  --secondary-color: #d5030ad4;
   /* --secondary-color: #ff5177; */
-  --links-color: #5f84a2;
+  /* --links-color: #005d97; */
+  --links-color: #ff0033;
+
   /* --secondary-background-color: #dfebf1; */
   /*--secondary-background-color: #d9e5ea;*/
   --scroll-bar-bg-color: #ebebeb;
@@ -21,10 +24,11 @@
   margin: 1.5em auto;
   padding: 0.5em;
   padding-top: 2em;
-} 
+}
 
 body {
-  font-family: "Inconsolata", monospace; 
+  background: var(--background-color);
+  font-family: "Inconsolata", monospace;
   padding: 0;
   margin: 0;
 }
@@ -32,7 +36,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Work Sans", sans-serif; 
+  font-family: "Work Sans", sans-serif;
 }
 
 h1 {
@@ -67,7 +71,7 @@ h4 {
   margin-bottom: 0em;
 }
 
-    /* links */
+/* links */
 
 a {
   font-family: "Inconsolata", monospace;
@@ -76,22 +80,20 @@ a {
   font-weight: bold;
   font-size: 1.2em;
 }
-      
+
 a:hover {
-      font-weight: bold;
+  font-weight: bold;
 }
 
 hr.solid {
   border: 0.75px solid rgba(123, 123, 123, 0.1);
   width: 100%;
-  background: rgb(216, 215, 215);
+  background: rgb(181, 180, 180);
   height: 1px;
 }
 
-  /* navbar */
+/* navbar */
 
-
- 
 /* .header {
   background-color: black;
   height: 3em;
@@ -146,9 +148,8 @@ hr.solid {
 
 .headshot {
   width: 20rem;
-  height: 22rem;
+  height: 20rem;
   object-fit: cover;
-  /* padding: 1px; */
 }
 
 .about-me {
@@ -161,16 +162,74 @@ hr.solid {
 }
 
 .professional-experience {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; /* Adjust the margin as needed */
 }
 
-.experience-background {
-  background: var(--secondary-background-color);
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 5em;
-  
+.experience-skills-list li {
+  display: inline-block;
+  margin-right: 10px; /* Add space between skills */
+  background-color: #f2f2f2; /* Light background color for skills */
+  padding: 6px 12px; /* Add padding to skills */
+  border-radius: 20px; /* Round the skill boxes */
+  font-size: 14px; /* Adjust font size */
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-content {
+  background-color: #efefef; /* Lighter background color */
+  padding: 20px;
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.timeline-title {
+  font-size: 22px; /* Slightly larger font size */
+  margin-top: 0;
+  margin-bottom: 10px; /* Add some space below title */
+}
+
+.timeline-date {
+  font-style: italic;
+  color: #888; /* Lighter date color */
+  margin: 0;
+}
+
+.experience-skills-list {
+  padding: 0;
+  margin: 10px 0 0; /* Add margin to separate skills */
+  list-style-type: none;
+}
+
+.timeline-end {
+  position: absolute;
+  top: calc(100%); /* Position below the last timeline item */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
 }
 
 .skills {
@@ -188,7 +247,7 @@ hr.solid {
 }
 
 .experience-skills-list > li {
-  background-color: rgba(235, 231, 231, 0.837);
+  background-color: rgb(255, 255, 255);
   border-radius: 30px;
   margin-right: 1.5em;
   padding: 0.6em;
@@ -206,7 +265,7 @@ hr.solid {
 }
 
 .skills-list > li {
-  background-color: rgba(235, 231, 231, 0.837);
+  background-color: rgb(245, 245, 245);
   border-radius: 30px;
   margin-right: 1.5em;
   padding: 0.6em;
@@ -214,21 +273,23 @@ hr.solid {
 }
 
 .skill1 {
-  color: rgb(12, 220, 165);
+  color: #ee7c99;
+  /* color: rgb(12, 220, 165); */
 }
 .skill2 {
-  color: rgb(255, 115, 0);
+  color: #ff0088;
+  /* color: rgb(255, 115, 0); */
 }
 .skill3 {
   color: rgb(252, 4, 91);
 }
 .skill4 {
-  color: rgb(95, 0, 136);
+  color: #d996a7;
+  /* color: rgb(95, 0, 136); */
 }
 .extracurricular {
   padding-top: 2em;
   padding-bottom: 2em;
-
 }
 
 .community-projects {
@@ -267,7 +328,7 @@ hr.solid {
   margin-top: 0;
 } */
 
-  /* social links */
+/* social links */
 
 .sticky {
   position: fixed;
@@ -293,47 +354,47 @@ hr.solid {
   color: var(--hover-color);
 }
 
-  /* Scrollbar */
+/* Scrollbar */
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    background-color:var(----scroll-bar-bg-color);
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+  background-color: var(----scroll-bar-bg-color);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    background: var(--primary-color);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: var(--primary-color);
 }
 
 footer {
   text-align: center;
   padding: 3px;
-  background-color: rgb(217, 239, 248);
+  background-color: white;
+  /* background-color: #fc727db8; */
   color: black;
 }
 @media screen and (max-width: 800px) {
-  
   .banner {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
   }
-  
+
   .about-me {
-      padding: 1em;
-      padding-top: none;
+    padding: 1em;
+    padding-top: none;
   }
   .headshot {
-   height: 20em;
-   width: 20em;
-   border: 20px solid white;
-      /* width: 100%;
+    height: 20em;
+    width: 20em;
+    border: 20px solid var(--background-color);
+    /* width: 100%;
       height: auto; */
   }
   .social {
@@ -345,6 +406,4 @@ footer {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
   }
-  }
-
-
+}
