@@ -3,7 +3,7 @@
   --primary-color: #e63946;
   /* --primary-color:  #FF69B4; */
   /* --secondary-color: #c392e6; */
-  --secondary-color: #d5030ad4;
+  --secondary-color: #ee7c99;
   /* --secondary-color: #ff5177; */
   /* --links-color: #005d97; */
   --links-color: #ff0033;
@@ -374,10 +374,10 @@ hr.solid {
 
 footer {
   text-align: center;
-  padding: 3px;
-  background-color: white;
+  padding: 2px;
+  background-color: var(--secondary-color);
   /* background-color: #fc727db8; */
-  color: black;
+  color: white;
 }
 @media screen and (max-width: 800px) {
   .banner {
